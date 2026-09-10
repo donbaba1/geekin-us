@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://geekin.ca/",
+      "service-doc": [
+        {
+          "href": "https://geekin.ca/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://geekin.ca/health",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}
