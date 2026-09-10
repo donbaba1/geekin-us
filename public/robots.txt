@@ -1,0 +1,44 @@
+# robots.txt for Geekin / Cube Technologies
+# RFC 9309 compliant — https://www.rfc-editor.org/rfc/rfc9309
+
+# ── General crawlers ─────────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.well-known/http-message-signatures-directory
+
+# ── AI training crawlers — opt-out ────────────────────────────────────────────
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ── Content Signals (draft-romm-aipref-contentsignals) ───────────────────────
+# https://contentsignals.org/
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+# ── Sitemap ───────────────────────────────────────────────────────────────────
+Sitemap: https://geekin.ca/sitemap.xml
