@@ -1,0 +1,19 @@
+{
+  "schema_version": "1649",
+  "serverInfo": {
+    "name": "Geekin IT Services",
+    "version": "1.0.0",
+    "description": "Managed IT services, cloud infrastructure, cybersecurity, and VoIP solutions by Cube Technologies.",
+    "contact": "info@geekin.ca",
+    "homepage": "https://geekin.ca/"
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "https://geekin.ca/mcp"
+  },
+  "capabilities": {
+    "tools": false,
+    "resources": false,
+    "prompts": false
+  }
+}
