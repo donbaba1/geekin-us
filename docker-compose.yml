@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+
+  api:
+    build: ./server
+    env_file:
+      - ./server/.env
+    expose:
+      - "4000"
